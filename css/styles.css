@@ -446,10 +446,8 @@
                 /* ESTO HACE QUE EL TEXTO DE LAS CARTAS SE OCULTE HASTA QUE UNO PASA EL MOUSE POR ENCIMA */
                 display: -webkit-box;
                 display: -moz-box;
-                display: box;
                 -webkit-box-orient: vertical;
                 -moz-box-orient: vertical;
-                box-orient: vertical;
                 overflow: hidden;
             }
             /*COLOR DE FONDO DE LAS TARJETAS*/
@@ -1151,7 +1149,6 @@
                     justify-content: center;
                     margin: 40%;
                     padding-top: 180%;
-                    align-items: left;
                 }
                 .container_galeria_audio {
                     padding-top: 95%;
@@ -1410,20 +1407,15 @@
             }
             
             .testimonial article h1 {
-                font-size: 40px;
-                font-weight: 600;
+                font-size: 2em;
                 text-transform: uppercase;
-                letter-spacing: 2px;
+                letter-spacing: 2em;
             }
             
-            .testimonial article h1::after {
-                content: "";
-                height: 4px;
-                margin-top: 4px;
-                width: 225px;
-                background-color: #16847c;
-                display: block;
-                margin-left: 408px;
+            @media only screen and (max-width: 800px) and (min-width: 360px) {
+                .testimonial article h1 {
+                    letter-spacing: 0;
+                }
             }
             
             .testimonial article img {
@@ -1514,7 +1506,6 @@
             .blog-container {
                 display: flex;
                 justify-content: center;
-                align-items: top;
                 flex-wrap: wrap;
             }
             
