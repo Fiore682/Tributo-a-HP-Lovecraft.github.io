@@ -1595,7 +1595,7 @@
                 background: linear-gradient(0deg, rgba(107, 124, 137, 1) 0%, rgb(243, 243, 243) 100%);
             }
             
-            @media (max-width:550px) {
+            @media only screen and (max-width: 800px) and (min-width: 360px) {
                 .container_juego_all {
                     background: white;
                 }
@@ -1608,6 +1608,7 @@
                     justify-content: center;
                     text-align: center;
                     margin: 0;
+                    background: white;
                 }
             }
             
