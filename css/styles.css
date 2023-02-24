@@ -1595,6 +1595,21 @@
                 background: linear-gradient(0deg, rgba(107, 124, 137, 1) 0%, rgb(243, 243, 243) 100%);
             }
             
+            @media (max-width:550px) {
+                .container_juego_all {
+                    background: white;
+                }
+                .container_juego {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    margin-top: 100px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+            
             .container_juego {
                 width: 100%;
                 display: flex;
